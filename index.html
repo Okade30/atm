@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM :D</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <section class="sign">
+      <h1>ATM</h1>
+    </section>
+
+    <section class="atm-top"></section>
+
+    <section class="screen">
+
+
+      <form id="loginForm">
+        <h3>Bienvenido!</h3>
+        <p>Por favor, ingrese su usuario y contraseña</p>
+        <div>
+          <input type="text" id="userName" name="user_name" placeholder="Usuario" required>
+        </div>
+        <div>
+          <input type="password" name="user_password" id="userPassword" placeholder="Contraseña" required>
+        </div>
+
+        <input class="btn-login" type="button" value="Iniciar Sesión" onclick="login()">
+      </form>
+
+      <div id="menu" class="menu">
+        <h2>Que deseas hacer hoy <span id="userNameDisplay"></span>😊?</h2>
+        <div id="optionsGrid" class="options-grid">
+          <button onclick="consultarSaldo()">Consultar Saldo</button>
+          <button onclick="realizarOperacion('Ingresar')">Ingresar Monto</button>
+          <button onclick="realizarOperacion('Retirar')">Retirar Monto</button>
+          <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="atm-bottom">
+      <div class="user-buttons">
+        <button class="panel">--------</button>
+        <button class="card-btn">card</button>
+        <button class="deposit-btn">depositar</button>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="atm-base">
+    <div class="ticket">ticket</div>
+    <div class="money"> $$$ </div>
+  </section>
+
+
+
+
+
+  <!-- <a href="https://www.flaticon.com/free-icons/atm" title="atm icons">Atm icons created by Freepik - Flaticon</a> -->
+
+
+
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

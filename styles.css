@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./blurry-gradient-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.container {
+  margin: 10% 10% 0 10%;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 81, 255) 0%,
+    rgba(167, 172, 180, 1) 100%
+  );
+  border: 15px solid rgb(7, 8, 42);
+  font-family: "Press Start 2P", cursive;
+  border-radius: 2%;
+  box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.48);
+}
+
+.sign {
+  background: radial-gradient(
+    circle,
+    rgb(47, 129, 215) 0%,
+    rgb(7, 46, 86) 100%
+  );
+  box-shadow: darkblue;
+  padding: 10%;
+ 
+}
+.sign > h1 {
+  color: rgb(220, 219, 226);
+}
+
+.atm-top {
+  border-top: 50px solid rgb(238, 232, 232);
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0;
+  width: 100%;
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10%;
+  padding: 5%;
+  height: 300px;
+  border-radius: 2.5px;
+  background: radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgb(166, 205, 250) 100%
+  );
+}
+
+.screen p {
+  font-size: 0.7rem;
+}
+
+.screen input {
+  border-radius: 0.8rem;
+  padding: 7px;
+  margin-top: 0.5rem;
+  background-color: rgba(245, 245, 220, 0.64);
+}
+
+.screen .btn-login {
+  width: 7rem;
+}
+
+.menu {
+  display: none;
+  color: rgb(15, 15, 15);
+  gap: 10px;
+  font-size: 10px;
+}
+
+#optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+#optionsGrid button {
+  background-color: black;
+  cursor: pointer;
+}
+
+.atm-bottom {
+  border-bottom: 100px solid #f1edf5;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0;
+  width: 100%;
+}
+.user-buttons {
+  display: grid;
+  padding-top: 5%;
+  gap: 5%;
+  grid-template-areas:
+    "a a c"
+    "a a b";
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.user-buttons .panel {
+  grid-area: a;
+  background-color: #130101;
+}
+
+.card-btn {
+  background-color: rgb(81, 0, 255);
+  display: inline-block;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.48);
+  grid-area: b;
+}
+
+.deposit-btn {
+  background-color: rgb(53, 0, 128);
+  display: inline-block;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.48);
+  grid-area: c;
+}
+
+.atm-base {
+  margin: -1% 11%;
+  height: 150px;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.48);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background: radial-gradient(
+    circle,
+    rgb(47, 129, 215) 0%,
+    rgb(7, 46, 86) 100%
+  );
+  border: 10px solid rgb(7, 8, 42);
+}
+.atm-base div {
+  border: 2px solid rgb(164, 193, 225);
+  margin: 25%;
+  padding: 0.5rem;
+  width: 50%;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.48) inset;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 2%;
+  font-size: 10px;
+}
+
+.atm-base .money {
+  color: rgb(3, 194, 3);
+}
